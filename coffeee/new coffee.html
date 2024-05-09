@@ -1,0 +1,266 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Bar</title>
+    <h1> Welcome To Our Tea Spotzz   ^_^  </h1>
+</head>
+<style>
+    nav {
+        background-color: rgb(62, 190, 219);
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul {
+        list-style-type: none;
+        font-size: 24px; 
+        font-family: cursive;
+        font-weight: bold;
+        display: flex;
+    }
+
+    nav ul li {
+        margin-right: 20px ;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+    nav ul li a:hover{
+        color: rgb(0, 183, 255);
+        filter: brightness(20);
+    } 
+    .box {
+        width: 300px;
+        height: 30px;
+        background-color:rgb(247, 240, 245);
+        position: -webkit-sticky;
+        animation: move 3s ease infinite alternate;
+        padding: 10px;
+        color: rgb(70, 197, 232);
+        border-radius: 30px;
+        font-size: large;
+        font: bolder;
+    }
+
+    body {
+        background-image: linear-gradient(to right,rgb(215, 216, 209),pink,rgb(213, 218, 214));
+
+    }
+    @keyframes move {
+        0% {
+            transform: translateX(0px);
+        }
+
+        50% {
+            background-color: cadetblue;
+            color: black;
+        }
+
+        100% {
+            transform: translateX(400px);
+        }
+    }
+    .row {
+        display: flex;
+    }
+    .column {
+        flex: 1;
+        height: 500px;
+        width: 30%;
+        border-radius: 30px;
+        background-color: white;
+        padding: 0px 10px;
+        margin: 0px 10px;
+    }
+    .coffee:hover{
+        color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    .cake:hover{
+        color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+
+    .icecream:hover{
+        color: black;
+        font-family:  Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    .para {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 20px;
+        padding: 0px 10px;
+        margin: 0px 10px;
+        
+    }
+    .address {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 0px 10px;
+        margin: 0px 10px;
+
+    }
+    .form {
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        font-weight: normal;
+        font-size: 20px;
+    }
+    .first {
+        text-align: center;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(Image/240_F_383448106_Ys57qMLw8zMmxXTp2DVCnXPDGIXU8wIX.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .sectionBreak {
+        width: 100%;
+        min-height: 20vh;
+        background-color: rgb(134, 174, 180);
+    }
+
+    .second {
+        background-image: url(https://images.unsplash.com/photo-1514496959998-c01c40915c5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+        height: 1000px;
+    }
+   
+</style>
+<body>
+    <nav>
+        <img src="Image/teapot-icon.webp" width="100px" alt="">
+        <ul>
+            <li><a href="#wow">Home</a></li>
+            <li><a href="#hello">Menu</a></li>
+            <li><a href="#last">About</a></li>
+            <li><a href="#hii">order</a></li>
+        </ul>
+    </nav>
+   
+    <div id="wow" style="background-image: url(Image/pexels-quang-nguyen-vinh-2159065.jpg);
+    
+        background-position: bottom;background-size: contain;justify-content: right;display: flex;height: 600px;">
+    </div><br><br><br>
+     <div class="first">
+        <h1></h1>
+    <div class="box"><center><b>Open from 10 A.M. to 6P.M.</b></center></div><br><br><br><br>
+    <h1><center><i>THE MENU</i></center></h1><br><br><br>
+ 
+    <div class="row" id="hello">
+        <div class="column coffee"style="border: 4px aqua ;">
+            <img src="Image/close-up-view-tea-white-cup-with-pluffy-pancakes.jpg" width="100%" height="50%" alt="">
+            <h1 style="background-color: aqua; text-align: center;">coffee:</h1>
+            <ul class="coffee">
+                <h2>Welcome</h2>
+                <li>Americano</li>
+                <li>Corto</li>
+                <li>Latte</li>
+                <li>Espresso</li>
+                <li>Decaf coffee</li>
+            </ul>
+        </div>
+    <br>
+        <div class="column cake" style="border: 4px;">
+            <img src="Image/birthday-cake-illustration_1284-9388.avif" width="100%" height="50%" alt="" >
+            <h1 style="background-color: red; text-align: center;">cake</h1>
+            <ul class="cake">
+                <h2>Welcome</h2>
+                <li>Cherry cake</li>
+                <li>blueberry cake</li>
+                <li>strawberry cake</li>
+                <li>Black forest</li>
+                <li>White forest</li>
+            </ul>
+        </div>
+    </br>
+    <br>
+        <div class="column icecream" style="border: 4px;">
+            <img src="Image/colorful-summer-treat-melting-ice-cream-generative-ai_188544-12424.avif" width="100%" height="50%" alt="" >
+            <h1 style="background-color: green; text-align: center;">icecream</h1>
+            <ul class="icecream">
+                <h2>Welcome</h2>
+                <li>Chocolate </li>
+                <li>vennila</li>
+                <li>butter scopch</li>
+                <li>black current</li>
+                <li>strawperry</li>
+            </ul>
+        </div>
+        </div>
+    </br>  
+    </div>
+    <br><br><br>
+    <hr>
+    
+    <h1><center id="last"><i>ABOUT</i></center></h1><br><br>
+    
+    <div  class="para"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, culpa omnis expedita molestias odit laboriosam ullam hic deleniti quasi temporibus porro, ut optio a saepe repellat tenetur aliquid. 
+        Labore, quisquam!Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quaerat soluta. Quisquam sed tenetur esse saepe eligendi doloremque, enim quia et. Eos magnam quo aperiam. Accusamus tenetur quidem amet tempora!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam corporis excepturi ducimus. Quam neque minus molestiae iure temporibus. Tenetur aspernatur tempora, nesciunt ut repudiandae eaque pariatur deleniti totam mollitia magni.</p>
+    </div><br><br>
+    </a>
+    <center>
+    <a href="https://youtube.com">
+        <img src="Image/friends.jpeg" style="background-position: center;background-size: contain;justify-content: right;display: flex;height: 600px;">
+    </a>
+    <br><br>
+    <audio controls loop src="file_example_MP3_700KB.mp3"></audio>
+    <br><br> 
+    </center>
+    <hr>
+    
+    <h1><center><i>CONTACT</i></center></h1><br><br>
+    <div class="address"><p>Find us at some place or call us at 05050515-122330<br><br>We offer full-service catering for any event.
+        Large or small we understand your needs and we will cater the food to satisfy the biggest criteria of them all. Both look and taste.</p><br><br>
+
+        <div class="sectionBreak"></div>
+        <div class="first second">
+            <h1></h1>
+        <h2>Fast Delivery </h2>
+    <div class="form">
+    <form action="#" method="post" id="hii">
+        <center>
+            <label for="text_input">name:</label>
+            <input type="text" id="text_input" name="text_input" placeholder="custemer name" required><br><br>
+
+            <label for="text_input">orders:</label>
+             <input type="text" id="text_input" name="text_input" placeholder="your order" required><br><br>
+
+            <label for="number"> number :</label>
+            <input type="number" id="number_input" name="number" placeholder="phone n/o" readonly><br><br>
+             
+            <h1><label for="select_input">Select:</label></h1>
+            <select id="select_input" name="select_input" required>
+                <option value="option1">cake </option>
+                <option value="option2">icecream</option>
+                <option value="option3">coffee</option>
+            </select><br><br>
+             
+            <label for="message_input">address</label><br>
+            <textarea id="message_input" name="message_input" placeholder="address" rows="4" cols="50"></textarea><br><br>
+            <center><input type="send message" value="send message"></center>
+           
+        </center>
+    </form>
+    <h1>Thank You</h1> 
+    </div>
+    </div>
+    </div>
+</body>
+</html>
